@@ -21,7 +21,7 @@ class Server{
         this.app.use(morgan('dev')); // Muestra que piden los clientes
         this.app.use(cors()); // Pedir datos al servidor
         this.app.use(express.json()); // Aceptar formatos json de aplicaciones cliente
-        this.app.use(express.urlencoded({extended: false}));
+        this.app.use(express.urlencoded({extended: false})); // Enviar desde formulario html
     }
 
     routes():void{
