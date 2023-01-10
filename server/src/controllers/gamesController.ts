@@ -6,7 +6,7 @@ class GamesController {
 
     public async list(req: Request, res: Response): Promise<void> {
         const  gameList = await connection.query('SELECT * FROM games');
-        console.log(gameList[0]);
+        // console.log(gameList[0]);
         res.json(gameList[0]);
     }
 

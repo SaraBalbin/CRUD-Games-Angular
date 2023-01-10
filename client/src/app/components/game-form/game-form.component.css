@@ -1,0 +1,37 @@
+
+.targeta{
+    width: 480px;
+    margin: 20px;
+}
+img{
+    height: 300px;
+    width: 100%;
+} 
+
+.elemento{
+    height: 500px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.description{
+    height: 100px;
+    width: 100%;
+    overflow-y:auto;
+}
+
+h4{
+    padding-top: 20px;
+    text-align: center;
+}
+
+label{
+    padding-left: 15px;
+}
+
+button{
+    margin-top: 12px;
+    margin-left: 15px;
+}

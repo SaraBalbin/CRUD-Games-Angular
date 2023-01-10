@@ -1,0 +1,17 @@
+.targeta{
+    height: 500px;
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+}
+
+.description{
+    height: 100px;
+    width: 100%;
+    overflow-y:auto;
+}

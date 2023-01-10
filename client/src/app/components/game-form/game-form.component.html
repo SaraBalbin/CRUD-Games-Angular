@@ -1,0 +1,35 @@
+    
+<div class = 'card-group offset-md-2'>
+    <div class="col-md-4 targeta">
+        <div class="card">
+            <div class="card-body elemento">
+                <form action="">
+                <h4>Informacion del juego</h4>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" name="title" [(ngModel)] ='game.title' placeholder="Title" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                    <label>Descripcion del juego</label>
+                    <textarea name="description" [(ngModel)] ='game.description' rows="5" placeholder="Description" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Link de la imagen</label>
+                    <input type="url" name="image URL" [(ngModel)] ='game.image' placeholder="Image" class="form-control">
+                </div>
+                <button class="btn btn-success btn-block" (click)="saveNewGame()">
+                    Save
+                </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 targeta">
+        <div class="card card-body text-center elemento ">
+            <img [src]="game.image == '' ? '/assets/noimage.png' : game.image" alt="No Image" class="card-img-top">
+            <h3>{{game.id}}. {{game.title == '' ? 'Game Title' : game.title}}</h3>
+            <p class = 'description'>{{game.description == '' ? 'Write your Descrition' : game.description}}</p>
+            <p>{{game.created_at | date: 'yyyy-MM-dd'}}</p>
+        </div>
+    </div>
+</div>
